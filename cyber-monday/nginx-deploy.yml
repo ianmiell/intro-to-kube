@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: nginx
-  replicas: 3 # defaults to three ReplicaSets
+  replicas: 1 # defaults to three ReplicaSets
   template:
     metadata:
       # content needs top match matchLabels or K8s rejects Deployment
