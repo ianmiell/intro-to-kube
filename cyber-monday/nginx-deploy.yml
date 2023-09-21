@@ -15,13 +15,16 @@ spec:
       labels:
         app: nginx
     spec:
+      # TODO:
+      # - Add nginx container spec
+      # - Add cpu resource request limit to 100m
+      # - Add cpu resource limit to 100m and memory to 64Mi
       containers:
         - name: nginx
           image: nginx
           resources:
-            requests:
-              cpu: "100m"
             limits:
               cpu: "100m"
               memory: "64Mi"
-
+            requests:
+              cpu: "100m"
